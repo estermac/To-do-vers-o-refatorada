@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Agendar Tarefas</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="center">Tarefas</h1>
+    <p class="center">Organizando seu dia!!</p>
+
+    <ul class="center">
+        <li>
+            <i class="small material-icons">event_note</i>
+            Tarefas importantes!!
+        </li>
+        <li>Não esqueça !!!</li>
+    </ul>
+
+    <div class="card formulario">
+        <div class="card-content">
+            <div class="input-field">
+                <input type="text" class="campoTitulo" id="titulo" />
+                <label for="titulo">Título</label>
+            </div>
+
+            <div class="input-field">
+                <input type="text" class="campoObs" id="obs" />
+                <label for="obs">Observações</label>
+            </div>
+
+            <div class="input-field">
+                <select id="campoPrioridade">
+                    <option value="" disabled selected>Escolha a prioridade</option>
+                    <option value="Baixa">Baixa</option>
+                    <option value="Média">Média</option>
+                    <option value="Alta">Alta</option>
+                </select>
+                <label>Prioridade</label>
+            </div>
+
+            <div class="divBotao">
+                <a id="botao" class="btn-floating btn-large waves-effect waves-light red">
+                    <i class="material-icons">arrow_downward</i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <p class="center" id="contador">Tarefas pendentes: 0</p>
+
+    <section class="tarefas">
+        <table class="highlight">
+            <thead>
+                <tr>
+                    <th>Tarefa</th>
+                    <th>Observações</th>
+                    <th>Prioridade</th>
+                    <th>Concluir</th>
+                    <th>Apagar</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
